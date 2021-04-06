@@ -1,22 +1,15 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styles from '../../styles.module.css'
 
-const cursorKeyframes = keyframes`
-    from, to {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-`
-
-const StyledCursor = styled(span)`
-  animation: ${cursorKeyframes} infinite;
-`
-
-function Cursor() {
-  return <StyledCursor>|</StyledCursor>
+function Cursor({ cursorDuration = '1s' }) {
+  const cursorDurationStyle = {
+    animationDuration: cursorDuration
+  }
+  return (
+    <span style={cursorDurationStyle} className={styles.cursor}>
+      |
+    </span>
+  )
 }
 
 export default Cursor
