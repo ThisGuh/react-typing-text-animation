@@ -1,6 +1,5 @@
 .cursor {
   animation: cursor infinite;
-  font-size: 30px;
 }
 
 @keyframes cursor {
