@@ -7,21 +7,17 @@
 ## Install
 
 ```bash
-npm install --save react-typing-text-animation
+npm install react-typing-text-animation
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'react-typing-text-animation'
+import TypingTextAnimation from 'react-typing-text-animation'
 import 'react-typing-text-animation/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function Example() {
+  return <TypingTextAnimation text='example' />
 }
 ```
 
