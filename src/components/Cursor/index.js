@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../../styles.module.css'
 
-function Cursor({ cursorDuration = '1s' }) {
+function Cursor({ cursorDuration }) {
   const cursorDurationStyle = {
     animationDuration: cursorDuration
   }
